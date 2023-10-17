@@ -37,7 +37,7 @@ function checkWinner() {
         var a = combination[0];
         var b = combination[1];
         var c = combination[2];
-        if (cells[a].textContent === cells[b].textContent && cells[b].textContent === cells[c].textContent) {
+        if (cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[b].textContent === cells[c].textContent) {
             winner = cells[a].textContent;
             turn.textContent = `Player ${winner} wins!`;
         }
